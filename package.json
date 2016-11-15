@@ -1,0 +1,23 @@
+{
+  "name": "artist_website",
+  "version": "1.0.0",
+  "description": "This is a simple artist website using node.js",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass src/stylesheets/ -o static/css/",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "clean": "rm -rf static/css && mkdir -p static/css",
+    "build": "npm run clean && npm run build-css",
+    "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
+    "start": "node server"
+  },
+  "author": "Stephen Grable",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "jade": "^1.11.0",
+    "morgan": "^1.7.0",
+    "node-sass": "^3.12.5",
+    "nodemon": "^1.11.0"
+  }
+}
