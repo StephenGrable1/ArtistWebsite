@@ -1,7 +1,7 @@
 var express = require('express');
 var logger = require('morgan');
 var app = express();
-var template = require('jade').compileFile(__dirname + '/src/templates/index.jade');
+var template = require('pug').compileFile(__dirname + '/src/templates/index.pug');
 
 app.use(logger('dev'));
 app.use(express.static(__dirname + '/static'));
