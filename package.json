@@ -4,7 +4,7 @@
   "description": "This is a simple artist website using node.js",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass src/stylesheets/ -o static/css/",
+    "build-css": "node-sass src/stylesheets/index.scss -o static/css/",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "clean": "rm -rf static/css && mkdir -p static/css",
     "build": "npm run clean && npm run build-css",
