@@ -28,10 +28,6 @@ html {
   .header-container {
     height: 100vh; } }
 
-@media screen and (min-width: 920px) {
-  .header-container {
-    height: 100vh; } }
-
 header {
   margin-top: 0px; }
 
