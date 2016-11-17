@@ -1,12 +1,16 @@
-// Handle refresh cases to always start at top 
-if(location.hash) {
-  setTimeout(function() {
-    window.scrollTo(0, 0);
-  }, 1)
+// Handle refresh cases to always start at top
+$(document).ready(function() {
+  if(location.hash) {
+    setTimeout(function() {
+      window.scrollTo(0, 0);
+    }, 1)
 
-} else {
-  window.onbeforeunload = function() {window.scrollTo(0,0);}
-}
+  } else {
+    window.onbeforeunload = function() {window.scrollTo(0,0);}
+  }
+})
+
+
 
 $(window).on('load', function () {
   var handleScroll = {
