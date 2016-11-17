@@ -8,7 +8,6 @@ if (location.hash) {
 $(window).on("load", function() {
 
   var handleScroll = {
-      people: 4,
       init: function(){
         this.casheDom();
         this.scrollOnLoad();
