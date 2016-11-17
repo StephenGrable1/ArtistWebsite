@@ -8,6 +8,7 @@ if (location.hash) {
 $(window).on("load", function() {
 
   var handleScroll = {
+      people: 4,
       init: function(){
         this.casheDom();
         this.scrollOnLoad();
@@ -46,10 +47,10 @@ $(window).on("load", function() {
         if (location.hash) {
           var href = location.hash;
           handleScroll.scrollToSection(href);
+        }
       }
-    }
-};
+  };
 
-handleScroll.init();
+  handleScroll.init();
 
 });
