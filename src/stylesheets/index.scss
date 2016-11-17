@@ -3,6 +3,12 @@ html{
   margin-left: -8px;
 }
 
+.section {
+  margin: 0 0 1rem 0;
+  opacity: 0;
+}
+
 @import "partials/head";
 @import "partials/header";
 @import "partials/foot";
+@import "partials/listen-section";

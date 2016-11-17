@@ -2,6 +2,10 @@ html {
   margin-right: -8px;
   margin-left: -8px; }
 
+.section {
+  margin: 0 0 1rem 0;
+  opacity: 0; }
+
 .header-container {
   margin-top: -8px;
   background-image: url("/cover_img/cover_photo.png");
@@ -36,3 +40,15 @@ li {
 img {
   width: 100%;
   margin-top: 0; }
+
+footer {
+  background-color: blue; }
+
+.listen-container {
+  margin: auto;
+  margin-top: 2rem;
+  width: 70%; }
+
+@media screen and (max-width: 680px) {
+  .listen-container {
+    width: 90%; } }

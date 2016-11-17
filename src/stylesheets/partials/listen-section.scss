@@ -1,0 +1,11 @@
+.listen-container{
+  margin:auto;
+  margin-top: 2rem;
+  width:70%;
+}
+
+@media screen and (max-width: 680px){
+  .listen-container{
+      width:90%;
+  }
+}
