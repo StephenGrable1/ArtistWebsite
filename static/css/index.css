@@ -42,7 +42,8 @@ img {
   margin-top: 0; }
 
 footer {
-  background-color: blue; }
+  background-color: #d3d3d3;
+  text-align: center; }
 
 .listen-container {
   margin: auto;

@@ -8,7 +8,6 @@ if (location.hash) {
 $(window).on("load", function() {
 
   var handleScroll = {
-      test: 'test',
       init: function(){
         this.casheDom();
         this.scrollOnLoad();
@@ -19,8 +18,6 @@ $(window).on("load", function() {
       casheDom: function() {
         this.$el = $('html, body');
         this.$li = this.$el.find('li');
-        this.$section = this.$el.find('.section');
-        console.log('casheDom');
       },
       scrollOnClick: function() {
         this.$li.click(function() {
@@ -37,7 +34,6 @@ $(window).on("load", function() {
               if(bottomWindow > (bottomSection - 300)) {
                 $(this).animate({'opacity':'1'}, 1500);
               }
-
             });
           });
       },
@@ -45,7 +41,6 @@ $(window).on("load", function() {
         this.$el.animate({
           scrollTop: $(href).offset().top
         }, 'slow');
-        console.log('scrollToSection: ', href);
       },
       scrollOnLoad: function() {
         if (location.hash) {
@@ -58,37 +53,3 @@ $(window).on("load", function() {
 handleScroll.init();
 
 });
-
-//
-//
-//   //If url has a hash, set webpage to top and slow scroll to location
-//   if (location.hash) {
-//   setTimeout(function() {
-//     window.scrollTo(0, 0);
-//     $('html, body').animate({
-//       scrollTop: $(location.hash).offset().top
-//     }, 'slow');
-//   }, 1);
-// }
-//   console.log('index.js here')
-//   $(window).scroll(function() {
-//     $('.section').each(function(i) {
-//       var bottomSection = $(this).position().top + $(this).outerHeight();
-//       var bottomWindow = $(window).scrollTop() + $(window).height();
-//
-//       if(bottomWindow > (bottomSection - 300)) {
-//         $(this).animate({'opacity':'1'}, 1500);
-//       }
-//
-//     });
-//   });
-//
-//   $("li").click(function() {
-//       var href = $(this).parent().attr('href');
-//       scrollSlow(href);
-//   })
-//
-//   var scrollSlow(href) = function($('html, body').animate({
-//     scrollTop: $(href).offset().top
-//   }, 'slow');
-// }));
