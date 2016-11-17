@@ -1,19 +1,20 @@
-// if hash is present prevent jumping to section and scroll to top
-if (location.hash) {
+// Handle refresh cases to always start at top 
+if(location.hash) {
   setTimeout(function() {
     window.scrollTo(0, 0);
   }, 1)
-};
 
-$(window).on("load", function() {
+} else {
+  window.onbeforeunload = function() {window.scrollTo(0,0);}
+}
 
+$(window).on('load', function () {
   var handleScroll = {
       init: function(){
         this.casheDom();
         this.scrollOnLoad();
         this.scrollOnClick();
         this.fadeIn();
-
       },
       casheDom: function() {
         this.$el = $('html, body');
@@ -45,11 +46,13 @@ $(window).on("load", function() {
       scrollOnLoad: function() {
         if (location.hash) {
           var href = location.hash;
-          handleScroll.scrollToSection(href);
-        }
+            setTimeout(function() {
+              window.scrollTo(0, 0);
+              handleScroll.scrollToSection(href);
+            }, 1)
+          };
       }
-  };
+  }
 
   handleScroll.init();
-
 });
