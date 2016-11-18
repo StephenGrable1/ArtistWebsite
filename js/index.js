@@ -1,4 +1,4 @@
-// Handle refresh cases to always start at top
+// Handle refresh cases to always start at top on load
 $(document).ready(function() {
   if(location.hash) {
     setTimeout(function() {
@@ -10,8 +10,7 @@ $(document).ready(function() {
   }
 })
 
-
-
+// Handle scrolling feature
 $(window).on('load', function () {
   var handleScroll = {
       init: function(){

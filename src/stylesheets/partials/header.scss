@@ -25,13 +25,14 @@ h1{
   float:left;
 }
 
+// Display when not in mobile
 ul {
   list-style-type: none;
   float:right;
 }
 
 li{
-  color:blue;
+  color:white;
   display: inline;
   margin: 0 2rem 0 0;
 }
