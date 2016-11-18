@@ -41,19 +41,6 @@ img {
   width: 100%;
   margin-top: 0; }
 
-footer {
-  background-color: #d3d3d3;
-  text-align: center; }
-
-.listen-container {
-  margin: auto;
-  margin-top: 2rem;
-  width: 70%; }
-
-@media screen and (max-width: 680px) {
-  .listen-container {
-    width: 90%; } }
-
 @media screen and (max-width: 600px) {
   .hamburger-container {
     padding: 8px;
@@ -85,3 +72,16 @@ footer {
     .nav-container li {
       margin-top: 2rem;
       display: block; } }
+
+.listen-container {
+  margin: auto;
+  margin-top: 2rem;
+  width: 70%; }
+
+@media screen and (max-width: 680px) {
+  .listen-container {
+    width: 80%; } }
+
+footer {
+  background-color: #d3d3d3;
+  text-align: center; }
