@@ -165,7 +165,7 @@ img {
     margin-top: .2rem;
     width: 50%; }
     .bio-img-container img {
-      width: 100%;
+      width: 260px;
       margin: auto; } }
 
 @media screen and (min-width: 800px) {
