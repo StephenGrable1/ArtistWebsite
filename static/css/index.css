@@ -156,7 +156,7 @@ img {
       width: 100%;
       margin: auto; } }
 
-@media screen and (min-width: 681px) and (max-width: 780px) {
+@media screen and (min-width: 681px) and (max-width: 800px) {
   .bio-section {
     height: 475px; }
   .bio-text {
@@ -168,7 +168,7 @@ img {
       width: 100%;
       margin: auto; } }
 
-@media screen and (min-width: 781px) {
+@media screen and (min-width: 800px) {
   .bio-img-container {
     width: 275px;
     float: right;
@@ -176,7 +176,7 @@ img {
     .bio-img-container img {
       width: 275px; }
   .bio-text {
-    margin: 3.6rem 0 0 .5rem; } }
+    margin: 4rem 0 0 .5rem; } }
 
 @media screen and (min-width: 1200px) {
   .bio-section {
@@ -185,7 +185,7 @@ img {
   .bio-img-container {
     margin-right: 2.5rem; }
   .bio-text {
-    margin: 5rem 0 0 2.5rem; } }
+    margin: 6rem 0 0 2.5rem; } }
 
 .bio-text-extended {
   display: none; }
