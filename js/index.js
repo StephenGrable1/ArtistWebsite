@@ -11,7 +11,7 @@ $(document).ready(function() {
 })
 
 // Handle scrolling feature
-$(window).on('load', function () {
+$(document).ready(function () {
   var handleScroll = {
       init: function(){
         this.casheDom();

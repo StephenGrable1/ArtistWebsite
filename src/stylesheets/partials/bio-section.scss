@@ -1,6 +1,6 @@
 .bio-section{
   background-color: $medium-grey;
-  height: 470px;
+  height: 485px;
 }
 
 .bio-container{
@@ -26,7 +26,7 @@
 
 @media screen and (max-width:320px){
   .bio-section{
-    height: 590px;
+    height: 570px;
   }
   .bio-text {
     width:250px;
@@ -45,7 +45,7 @@
 
 @media screen and (max-width:560px) and (min-width:321px) {
   .bio-section{
-    height: 590px;
+    height: 585px;
   }
   .bio-text {
     width:100%;
@@ -62,14 +62,13 @@
   }
 }
 
-
-
-@media screen and (min-width:561px) and (max-width:680px) {
+@media screen and (max-width:620px) and (min-width:561px) {
   .bio-section{
-    height: 630px;
+    height: 610px;
   }
 
   .bio-text {
+    padding-bottom: 1rem;
     width:100%
   }
 
@@ -84,19 +83,77 @@
   }
 }
 
-@media screen and (min-width:780px) {
+
+
+@media screen and (min-width:621px) and (max-width:680px) {
+  .bio-section{
+    height: 635px;
+  }
+
+  .bio-text {
+    padding-bottom: 1rem;
+    width:100%
+  }
+
   .bio-img-container{
-    width:275px;
-    float:right;
+    width:60%;
+    float: none;
+    margin:auto;
     img{
-      width:275px;
-      margin:auto;
+      width:100%;
+      margin: auto;
     }
   }
 }
 
+@media screen and (min-width:681px) and (max-width:780px) {
+  .bio-section{
+    height: 475px;
+  }
+  .bio-text {
+    margin: 2rem 0 0 0;
+  }
+  .bio-img-container{
+    margin-top: .2rem;
+    width:50%;
+    img{
+      width:100%;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (min-width:781px) {
+  .bio-img-container{
+    width:275px;
+    float:right;
+    margin-right: .5rem;
+    img{
+      width:275px;
+
+    }
+  }
+
+  .bio-text{
+    margin: 3.6rem 0 0 .5rem;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .bio-section{
+    background-color: $medium-grey;
+    height: 480px;
+  }
+  .bio-img-container{
+    margin-right: 2.5rem;
+  }
+  .bio-text{
+    margin: 5rem 0 0 2.5rem;
+  }
+}
+
+
 .bio-text-extended{
-  color:blue;
   display: none;
 }
 
