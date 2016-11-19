@@ -31,12 +31,11 @@ $(window).on('load', function () {
       },
       fadeIn: function() {
         $(window).scroll(function() {
-            $('.section').each(function(i) {
+            $('.media').each(function(i) {
               var bottomSection = $(this).position().top + $(this).outerHeight();
               var bottomWindow = $(window).scrollTop() + $(window).height();
-
               if(bottomWindow > (bottomSection - 300)) {
-                $(this).animate({'opacity':'1'}, 1500);
+                $(this).animate({'opacity':'1'}, 2500);
               }
             });
           });

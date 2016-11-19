@@ -1,0 +1,23 @@
+.watch-section{
+
+}
+
+.watch-container{
+  margin:auto;
+  padding: 2rem 0 2rem 0;
+  width:70%;
+  iframe{
+    height:450px
+  }
+}
+
+
+
+@media screen and (max-width: 680px){
+  .watch-container{
+      width:80%;
+      iframe {
+        height:350px;
+      }
+  }
+}
