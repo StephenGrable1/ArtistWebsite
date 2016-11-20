@@ -1,6 +1,8 @@
-html {
+html, body {
   margin-right: -8px;
-  margin-left: -8px; }
+  margin-left: -8px;
+  margin-bottom: -8px;
+  height: 100%; }
 
 .media {
   opacity: 0; }
@@ -20,14 +22,15 @@ html {
     height: 805px; } }
 
 header {
-  margin-top: 0px; }
+  margin-top: 0px;
+  opacity: 1; }
 
 h1 {
-  color: purple;
-  margin-top: 0px;
+  margin: 1rem 0 0 2rem;
   float: left; }
 
 ul {
+  margin: 1.8rem 2rem 0 0;
   list-style-type: none;
   float: right; }
 
@@ -42,6 +45,7 @@ img {
 
 @media screen and (max-width: 600px) {
   .hamburger-container {
+    margin-right: 1rem;
     padding: 8px;
     width: 50px;
     height: 50px;
@@ -115,7 +119,7 @@ img {
       width: 100%;
       margin: auto; } }
 
-@media screen and (max-width: 560px) and (min-width: 321px) {
+@media screen and (max-width: 460px) and (min-width: 321px) {
   .bio-section {
     height: 585px; }
   .bio-text {
@@ -128,9 +132,22 @@ img {
       width: 100%;
       margin: auto; } }
 
+@media screen and (max-width: 560px) and (min-width: 461px) {
+  .bio-section {
+    height: 600px; }
+  .bio-text {
+    width: 100%; }
+  .bio-img-container {
+    width: 60%;
+    float: none;
+    margin: auto; }
+    .bio-img-container img {
+      width: 100%;
+      margin: auto; } }
+
 @media screen and (max-width: 620px) and (min-width: 561px) {
   .bio-section {
-    height: 610px; }
+    height: 620px; }
   .bio-text {
     padding-bottom: 1rem;
     width: 100%; }
@@ -211,6 +228,45 @@ img {
     .watch-container iframe {
       height: 350px; } }
 
+.follow-section {
+  background-color: #bdbdbd;
+  height: 100px;
+  margin-bottom: 0; }
+
+.social-links {
+  width: 320px;
+  margin: auto; }
+
+.social-links-container {
+  padding: 2rem 0 0 1.5rem;
+  width: 90%;
+  margin: auto; }
+  .social-links-container .img-container {
+    width: 40px;
+    margin: 0 1rem 0 0;
+    float: left; }
+  .social-links-container img {
+    transition: .2s; }
+
+.fb {
+  width: 40px; }
+
+.twt {
+  width: 40px; }
+
+.spotify {
+  width: 40px; }
+
+.insta {
+  width: 40px; }
+
+.yt {
+  width: 40px; }
+
 footer {
-  background-color: #fafafa;
-  text-align: center; }
+  background-color: black;
+  height: 75px;
+  text-align: center;
+  color: white; }
+  footer p {
+    padding-top: 25px; }

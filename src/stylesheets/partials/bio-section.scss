@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (max-width:560px) and (min-width:321px) {
+@media screen and (max-width:460px) and (min-width:321px) {
   .bio-section{
     height: 585px;
   }
@@ -62,9 +62,28 @@
   }
 }
 
+@media screen and (max-width:560px) and (min-width:461px) {
+  .bio-section{
+    height: 600px;
+  }
+  .bio-text {
+    width:100%;
+  }
+
+  .bio-img-container{
+    width:60%;
+    float: none;
+    margin:auto;
+    img{
+      width:100%;
+      margin: auto;
+    }
+  }
+}
+
 @media screen and (max-width:620px) and (min-width:561px) {
   .bio-section{
-    height: 610px;
+    height: 620px;
   }
 
   .bio-text {
