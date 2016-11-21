@@ -1,15 +1,3 @@
-// Handle refresh cases to always start at top on load
-$(document).ready(function() {
-  if(location.hash) {
-    setTimeout(function() {
-      window.scrollTo(0, 0);
-    }, 1)
-
-  } else {
-    window.onbeforeunload = function() {window.scrollTo(0,0);}
-  }
-})
-
 // Handle scrolling feature
 $(document).ready(function () {
   var handleScroll = {
@@ -35,7 +23,7 @@ $(document).ready(function () {
               var bottomSection = $(this).position().top + $(this).outerHeight();
               var bottomWindow = $(window).scrollTop() + $(window).height();
               if(bottomWindow > (bottomSection - 300)) {
-                $(this).animate({'opacity':'1'}, 2500);
+                $(this).animate({'opacity':'1'}, 1000);
               }
             });
           });

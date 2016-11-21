@@ -230,11 +230,12 @@ img {
 .follow-section {
   background-color: #bdbdbd;
   height: 100px;
-  margin-bottom: 0; }
+  margin-bottom: -1rem; }
 
 .social-links {
   width: 320px;
-  margin: auto; }
+  margin: auto;
+  padding-top: 25px; }
 
 .social-links-container {
   padding: 2rem 0 0 1.5rem;
@@ -242,6 +243,8 @@ img {
   margin: auto; }
   .social-links-container .img-container {
     width: 40px;
+    opacity: 0;
+    transition: 2s;
     margin: 0 1rem 0 0;
     float: left; }
   .social-links-container img {

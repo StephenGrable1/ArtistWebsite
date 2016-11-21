@@ -3,12 +3,13 @@ $social-ids: fb, twt, spotify, insta, yt;
 .follow-section{
   background-color: $medium-grey;
   height: 100px;
-  margin-bottom: 0;
+  margin-bottom: -1rem;
 }
 
 .social-links{
   width:320px;
   margin: auto;
+  padding-top: 25px;
 }
 
 .social-links-container{
@@ -18,6 +19,8 @@ $social-ids: fb, twt, spotify, insta, yt;
 
   .img-container{
     width:40px;
+    opacity: 0;
+    transition: 2s;
     margin: 0 1rem 0 0;
     float: left;
   }
