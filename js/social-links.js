@@ -3,7 +3,6 @@ $(document).ready(function(){
     init:function() {
       this.casheDom();
       this.bindEvents();
-      this.watchWindow(this.$imgPosition, this.$img);
     },
     casheDom: function(){
       this.$el = $('.follow-container');
@@ -13,6 +12,7 @@ $(document).ready(function(){
       this.$id = this.$img.attr('id');
     },
     bindEvents: function() {
+      this.watchWindow(this.$imgPosition, this.$img);
       this.$img.mouseover(function() {
         var id = $(this).attr('id');
         console.log("id is: ", id);
@@ -28,13 +28,15 @@ $(document).ready(function(){
       $(this.$imgContainer).css('opacity','1');
     },
     swingUp: function(id) {
-      $("#" + id).animate({'marginTop':'-900px'}, {duration:2500, queue:false});
+      $("#" + id).animate({'marginTop':'-900px'}, {duration:2000, queue:false});
     },
     watchWindow: function(position, images) {
       $(window).scroll(function() {
           var bottomWindow = $(window).scrollTop() + $(window).height();
-          //console.log(bottomWindow, position);
           var delay = 0;
+          //this function below is being called alot making it slow
+          //Fix this
+          //###########################################################
           if(bottomWindow > (position + 40)) {
               handleSocialLinks.fadeIn();
               $(images).each(function(){
