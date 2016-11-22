@@ -3,9 +3,6 @@ html, body {
   margin-left: -6px;
   margin-bottom: -8px; }
 
-.media {
-  opacity: 0; }
-
 .header-container {
   margin-top: -8px;
   background-image: url("/cover_img/cover_photo.png");
