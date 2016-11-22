@@ -8,12 +8,11 @@ $social-ids: fb, twt, spotify, insta, yt;
 
 .social-links{
   width:320px;
+  height:90px;
   margin: auto;
-  padding-top: 25px;
 }
 
 .social-links-container{
-  padding: 2rem 0 0 1.5rem;
   width:90%;
   margin: auto;
 
@@ -26,12 +25,14 @@ $social-ids: fb, twt, spotify, insta, yt;
   }
 
   img{
+    margin-top: 80px;
     transition: .2s;
   }
 }
 
 @each $id in $social-ids {
   .#{$id} {
+    margin-top: 50px;
     width:40px;
   }
 }

@@ -231,11 +231,10 @@ img {
 
 .social-links {
   width: 320px;
-  margin: auto;
-  padding-top: 25px; }
+  height: 90px;
+  margin: auto; }
 
 .social-links-container {
-  padding: 2rem 0 0 1.5rem;
   width: 90%;
   margin: auto; }
   .social-links-container .img-container {
@@ -245,21 +244,27 @@ img {
     margin: 0 1rem 0 0;
     float: left; }
   .social-links-container img {
+    margin-top: 80px;
     transition: .2s; }
 
 .fb {
+  margin-top: 50px;
   width: 40px; }
 
 .twt {
+  margin-top: 50px;
   width: 40px; }
 
 .spotify {
+  margin-top: 50px;
   width: 40px; }
 
 .insta {
+  margin-top: 50px;
   width: 40px; }
 
 .yt {
+  margin-top: 50px;
   width: 40px; }
 
 footer {

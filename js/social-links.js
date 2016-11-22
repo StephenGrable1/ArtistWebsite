@@ -28,7 +28,13 @@ $(document).ready(function(){
       $(this.$imgContainer).css('opacity','1');
     },
     swingUp: function(id) {
-      $("#" + id).animate({'marginTop':'-900px'}, {duration:2000, queue:false});
+      $("#" + id).animate({'marginTop':'0px'}, {duration:800});
+      console.log('swingup: ', id)
+      handleSocialLinks.swingDown(id);
+    },
+    swingDown: function(id) {
+      console.log("swing down", id);
+      $("#" + id).animate({'marginTop':'+30px'}, {duration:300});
     },
     swingUpTimer: function(images) {
       var delay = 0;
@@ -46,7 +52,7 @@ $(document).ready(function(){
         $(window).scroll(function() {
             var bottomWindow = $(window).scrollTop() + $(window).height();
             if(bottomWindow > (position + 40) && (i===0)) {
-                // console.log("this should only be called once: ", i);
+                console.log("this should only be called once: ", i);
                 handleSocialLinks.queueIntroAnimataion(images);
                 i++;
                 return i;

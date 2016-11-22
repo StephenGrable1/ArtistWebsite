@@ -19,7 +19,7 @@ $(document).ready(function () {
       scrollToSection: function(href) {
         this.$el.animate({
           scrollTop: $(href).offset().top
-        }, 1000);
+        }, 800);
       },
       scrollOnLoad: function() {
         if (location.hash) {
