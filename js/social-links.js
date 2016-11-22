@@ -39,7 +39,7 @@ $(document).ready(function(){
     },
     swingDown: function(id) {
       console.log("swing down", id);
-      $("#" + id).css({'margin-top':'+20px'}, {duration:800});
+      $("#" + id).css({'margin-top':'+30px'}, {duration:800});
     },
     swingUpTimer: function(images) {
       var delay = 0;
