@@ -30,25 +30,32 @@ $(document).ready(function(){
     swingUp: function(id) {
       $("#" + id).animate({'marginTop':'-900px'}, {duration:2000, queue:false});
     },
+    swingUpTimer: function(images) {
+      var delay = 0;
+      $(images).each(function(){
+        // console.log("this should only fire 5 times and no more");
+          var id = this.id;
+          setTimeout(function() {
+            handleSocialLinks.swingUp(id);
+          }, delay);
+          delay += 50;
+      });
+    },
     watchWindow: function(position, images) {
-      $(window).scroll(function() {
-          var bottomWindow = $(window).scrollTop() + $(window).height();
-          var delay = 0;
-          //this function below is being called alot making it slow
-          //Fix this
-          //###########################################################
-          if(bottomWindow > (position + 40)) {
-              handleSocialLinks.fadeIn();
-              $(images).each(function(){
-                  var id = this.id;
-                  setTimeout(function() {
-                    handleSocialLinks.swingUp(id);
-                  }, delay);
-                  delay += 50;
-              });
-
-          }
-        });
+      var i = 0;
+        $(window).scroll(function() {
+            var bottomWindow = $(window).scrollTop() + $(window).height();
+            if(bottomWindow > (position + 40) && (i===0)) {
+                // console.log("this should only be called once: ", i);
+                handleSocialLinks.queueIntroAnimataion(images);
+                i++;
+                return i;
+              }
+          });
+    },
+    queueIntroAnimataion: function(images) {
+      handleSocialLinks.fadeIn();
+      handleSocialLinks.swingUpTimer(images);
     },
     increaseSize: function(id) {
       var socialId = id;

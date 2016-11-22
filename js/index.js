@@ -22,8 +22,10 @@ $(document).ready(function () {
             $('.media').each(function(i) {
               var bottomSection = $(this).position().top + $(this).outerHeight();
               var bottomWindow = $(window).scrollTop() + $(window).height();
+
               if(bottomWindow > (bottomSection - 300)) {
-                $(this).animate({'opacity':'1'}, 1000);
+                //console.log("does this call only 5 times");
+                $(this).animate({'opacity':'1'}, 50);
               }
             });
           });
@@ -31,7 +33,7 @@ $(document).ready(function () {
       scrollToSection: function(href) {
         this.$el.animate({
           scrollTop: $(href).offset().top
-        }, 'slow');
+        }, 1000);
       },
       scrollOnLoad: function() {
         if (location.hash) {
