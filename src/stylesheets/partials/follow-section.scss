@@ -14,19 +14,19 @@ $social-ids: fb, twt, spotify, insta, yt;
 
 .social-links-container{
   width:90%;
+  opacity: 0;
+  transition: 2s;
   margin: auto;
 
   .img-container{
     width:40px;
-    opacity: 0;
-    transition: 2s;
     margin: 0 1rem 0 0;
     float: left;
   }
 
   img{
     margin-top: 80px;
-    transition: .2s;
+    transition: .5s;
   }
 }
 

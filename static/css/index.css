@@ -236,16 +236,16 @@ img {
 
 .social-links-container {
   width: 90%;
+  opacity: 0;
+  transition: 2s;
   margin: auto; }
   .social-links-container .img-container {
     width: 40px;
-    opacity: 0;
-    transition: 2s;
     margin: 0 1rem 0 0;
     float: left; }
   .social-links-container img {
     margin-top: 80px;
-    transition: .2s; }
+    transition: .5s; }
 
 .fb {
   margin-top: 50px;

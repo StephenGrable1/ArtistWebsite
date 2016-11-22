@@ -25,16 +25,21 @@ $(document).ready(function(){
       });
     },
     fadeIn: function() {
-      $(this.$imgContainer).css('opacity','1');
+      $(this.$el.find('.social-links-container')).css('opacity','1');
     },
     swingUp: function(id) {
-      $("#" + id).animate({'marginTop':'0px'}, {duration:800});
-      console.log('swingup: ', id)
-      handleSocialLinks.swingDown(id);
+      $("#" + id).css({'margin-top':'15px'}, {duration:1000});
+
+      setTimeout(function() {
+        handleSocialLinks.swingDown(id);
+        console.log('swingup: ', id)
+      }, 500);
+
+
     },
     swingDown: function(id) {
       console.log("swing down", id);
-      $("#" + id).animate({'marginTop':'+30px'}, {duration:300});
+      $("#" + id).css({'margin-top':'+20px'}, {duration:800});
     },
     swingUpTimer: function(images) {
       var delay = 0;
