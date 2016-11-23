@@ -4,11 +4,16 @@
   "description": "This is a simple artist website using node.js",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass src/stylesheets/index.scss -o static/css/",
+    "build-css": "node-sass src/stylesheets/index.scss -o public/css/",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "clean": "rm -rf static/css && mkdir -p static/css",
-    "build": "npm run clean && npm run build-css",
+    "clean": "rm -rf public/css && mkdir -p public/css",
+    "build:css": "npm run clean && npm run build-css",
     "watch": "npm run clean && npm run watch-css & nodemon server -e js,jade",
+    "uglify": "mkdir -p public/js && uglifyjs src/js/*.js -m -o public/js/app.js && uglifyjs src/js/*.js -m -c -o public/js/app.min.js",
+    "build:uglify": "npm run uglify",
+    "imageminPhotos": "imagemin src/media/* --out-dir public/media/",
+    "imageminSVG": "imagemin --plugin=svgo src/media/icons/* --out-dir public/media/icons",
+    "build:imagemin": "npm run imageminPhotos && npm run imageminSVG",
     "start": "node server"
   },
   "author": "Stephen Grable",
@@ -19,5 +24,10 @@
     "node-sass": "^3.12.5",
     "nodemon": "^1.11.0",
     "pug": "^2.0.0-beta6"
+  },
+  "devDependencies": {
+    "imagemin": "^5.2.2",
+    "imagemin-cli": "^3.0.0",
+    "uglify-js": "^2.7.4"
   }
 }

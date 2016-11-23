@@ -5,7 +5,7 @@ html, body {
 
 .header-container {
   margin-top: -8px;
-  background-image: url("/cover_img/cover_photo.png");
+  background-image: url("/media/cover_photo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -237,7 +237,7 @@ img {
 .social-links-container {
   width: 90%;
   opacity: 0;
-  transition: 2s;
+  transition: .2s;
   margin: auto; }
   .social-links-container .img-container {
     width: 40px;
