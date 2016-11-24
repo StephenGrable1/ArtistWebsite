@@ -42,6 +42,7 @@ $(document).ready(function(){
     },
     fadeIn: function() {
       $(this.$el.find('.social-links-container')).css('opacity','1');
+      console.log('fade in')
     },
     swingUp: function(id) {
       $("#" + id).css({'margin-top':'15px'}, {duration:1000});

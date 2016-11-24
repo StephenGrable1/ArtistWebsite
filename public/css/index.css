@@ -216,7 +216,7 @@ img {
   padding: 2rem 0 2rem 0;
   width: 100%; }
   .watch-container .media {
-    width: 70%;
+    width: 80%;
     margin: auto; }
     .watch-container .media iframe {
       margin: auto; }
@@ -258,6 +258,7 @@ img {
 .social-links-container {
   width: 90%;
   background-color: blue;
+  opacity: 0;
   transition: .2s;
   margin: auto; }
   .social-links-container .img-container {
