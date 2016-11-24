@@ -14,6 +14,7 @@
     "imageminPhotos": "imagemin src/media/* --out-dir public/media/",
     "imageminSVG": "imagemin --plugin=svgo src/media/icons/* --out-dir public/media/icons",
     "build:imagemin": "npm run imageminPhotos && npm run imageminSVG",
+    "build:all": "npm run build:css && npm run build:imagemin && npm run build:uglify",
     "start": "node server"
   },
   "author": "Stephen Grable",
