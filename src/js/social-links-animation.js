@@ -19,7 +19,7 @@ $(document).ready(function(){
             var bottomWindow = $(window).scrollTop() + $(window).height();
 
              if (bottomWindow > elementPosition) {
-                 socialLogoAnimation.stop().animateButtons(".followBtn");
+                 socialLogoAnimation.animateButtons(".followBtn");
                  $(window).off('scroll');
                }
           });
