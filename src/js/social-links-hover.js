@@ -14,7 +14,6 @@ $(document).ready(function(){
         var id = $(this).attr('id');
         socialHover.increaseSize(id);
       });
-
       this.$img.mouseout(function() {
         var id = $(this).attr('id');
         socialHover.defaultSize(id);

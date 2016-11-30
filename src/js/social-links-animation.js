@@ -17,10 +17,8 @@ $(document).ready(function(){
     watchWindow: function(elementPosition, elementContainer) {
         $(window).on('scroll',function() {
             var bottomWindow = $(window).scrollTop() + $(window).height();
-             console.log(bottomWindow, elementPosition);
 
              if (bottomWindow > elementPosition) {
-                 console.log("this should only be called once");
                  socialLogoAnimation.animateButtons(".followBtn");
                  $(window).off('scroll');
                }
