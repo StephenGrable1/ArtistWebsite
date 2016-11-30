@@ -7,10 +7,10 @@ $(document).ready(function(){
     casheDom: function(){
       this.$el = $('.follow-container');
       this.$sectionPosition = this.$el.position().top;
-      this.$followBtn = this.$el.find('.followBtn');
+      this.$followContainer = this.$el.find('.img-container');
     },
     bindEvents: function() {
-      var socialButtons = this.$followBtn;
+      var socialButtons = this.$followContainer;
       var sectionPosition = this.$sectionPosition;
       this.watchWindow(sectionPosition, socialButtons);
     },
