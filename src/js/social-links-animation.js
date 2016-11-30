@@ -25,7 +25,7 @@ $(document).ready(function(){
           });
     },
     animateButtons: function(btn){
-      $(btn).stop().velocity("transition.slideUpIn", {stagger: 75, drag: true });
+      $(btn).stop().velocity("transition.slideUpIn");
     }
   }
   socialLogoAnimation.init();
