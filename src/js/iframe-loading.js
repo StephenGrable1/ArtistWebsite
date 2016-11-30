@@ -1,6 +1,6 @@
 $(function() {
   $(".youtube").each(function() {
-    $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
+    $(this).css('background-image', 'url(https://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
     $(this).append($('<div/>', {'class': 'play'}));
 
     $('#'+this.id).on( 'click', function() {
