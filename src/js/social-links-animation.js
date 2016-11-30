@@ -21,14 +21,13 @@ $(document).ready(function(){
 
              if (bottomWindow > elementPosition) {
                  console.log("this should only be called once");
-                 socialLogoAnimation.animateSocialButtons(elementContainer);
+                 socialLogoAnimation.animateButtons(".followBtn");
                  $(window).off('scroll');
                }
           });
     },
-    animateSocialButtons: function(imageContainer){
-      console.log(imageContainer);
-      $("img").velocity("transition.slideUpIn", {stagger: 75, drag: true });
+    animateButtons: function(btn){
+      $(btn).velocity("transition.slideUpIn", {stagger: 75, drag: true });
     }
   }
   socialLogoAnimation.init();
