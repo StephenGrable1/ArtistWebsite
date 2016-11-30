@@ -19,13 +19,13 @@ $(document).ready(function(){
             var bottomWindow = $(window).scrollTop() + $(window).height();
 
              if (bottomWindow > elementPosition) {
-                 socialLogoAnimation.animateButtons(".followBtn");
+                 socialLogoAnimation.stop().animateButtons(".followBtn");
                  $(window).off('scroll');
                }
           });
     },
     animateButtons: function(btn){
-      $(btn).velocity("transition.slideUpIn", {stagger: 75, drag: true });
+      $(btn).stop().velocity("transition.slideUpIn", {stagger: 75, drag: true });
     }
   }
   socialLogoAnimation.init();
