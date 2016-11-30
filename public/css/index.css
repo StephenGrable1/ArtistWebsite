@@ -262,6 +262,7 @@ img {
   .social-links-container .img-container {
     width: 40px;
     margin: 0 1rem 0 0;
+    opacity: 0;
     float: left; }
   .social-links-container img {
     margin-top: 30px; }
