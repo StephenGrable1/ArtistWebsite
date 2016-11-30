@@ -6,9 +6,10 @@ html, body {
 .header-container {
   margin-top: -8px;
   background-image: url("/media/cover_photo.png");
-  background-size: cover;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 650px;
   background-color: #d3d3d3; }
@@ -258,35 +259,27 @@ img {
 .social-links-container {
   width: 90%;
   background-color: blue;
-  opacity: 0;
-  transition: .2s;
   margin: auto; }
   .social-links-container .img-container {
     width: 40px;
     margin: 0 1rem 0 0;
     float: left; }
   .social-links-container img {
-    margin-top: 80px;
-    transition: .5s; }
+    margin-top: 30px; }
 
 .fb {
-  margin-top: 50px;
   width: 40px; }
 
 .twt {
-  margin-top: 50px;
   width: 40px; }
 
 .spotify {
-  margin-top: 50px;
   width: 40px; }
 
 .insta {
-  margin-top: 50px;
   width: 40px; }
 
 .yt {
-  margin-top: 50px;
   width: 40px; }
 
 footer {

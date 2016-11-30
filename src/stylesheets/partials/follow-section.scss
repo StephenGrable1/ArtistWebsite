@@ -16,27 +16,22 @@ $social-ids: fb, twt, spotify, insta, yt;
 .social-links-container{
   width:90%;
   background-color: blue;
-  opacity: 0;
-  transition: .2s;
   margin: auto;
 
 
   .img-container{
-
     width:40px;
     margin: 0 1rem 0 0;
     float: left;
   }
 
   img{
-    margin-top: 80px;
-    transition: .5s;
+    margin-top: 30px;
   }
 }
 
 @each $id in $social-ids {
   .#{$id} {
-    margin-top: 50px;
     width:40px;
   }
 }
