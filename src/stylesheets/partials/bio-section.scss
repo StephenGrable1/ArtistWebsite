@@ -11,6 +11,7 @@
 
 .bio-text{
   width:40%;
+  font-size: 15px;
   float:left;
 }
 
@@ -26,7 +27,7 @@
 
 @media screen and (max-width:320px){
   .bio-section{
-    height: 570px;
+    height: 610px;
   }
   .bio-text {
     width:250px;
@@ -45,7 +46,7 @@
 
 @media screen and (max-width:460px) and (min-width:321px) {
   .bio-section{
-    height: 585px;
+    height: 635px;
   }
   .bio-text {
     width:100%;
@@ -64,7 +65,7 @@
 
 @media screen and (max-width:560px) and (min-width:461px) {
   .bio-section{
-    height: 600px;
+    height: 625px;
   }
   .bio-text {
     width:100%;
@@ -83,7 +84,7 @@
 
 @media screen and (max-width:620px) and (min-width:561px) {
   .bio-section{
-    height: 620px;
+    height: 640px;
   }
 
   .bio-text {
@@ -106,7 +107,7 @@
 
 @media screen and (min-width:621px) and (max-width:680px) {
   .bio-section{
-    height: 640px;
+    height: 660px;
   }
 
   .bio-text {
@@ -127,10 +128,10 @@
 
 @media screen and (min-width:681px) and (max-width:800px) {
   .bio-section{
-    height: 475px;
+    height: 500px;
   }
   .bio-text {
-    margin: 2rem 0 0 0;
+    margin: 0 0 0 0;
   }
   .bio-img-container{
     margin-top: .2rem;
@@ -154,7 +155,13 @@
   }
 
   .bio-text{
-    margin: 4rem 0 0 .5rem;
+    margin: 1rem 0 0 .5rem;
+  }
+}
+
+@media screen and (min-width:900px) {
+  .bio-text{
+    margin: 2.5rem 0 0 .5rem;
   }
 }
 
@@ -167,7 +174,7 @@
     margin-right: 2.5rem;
   }
   .bio-text{
-    margin: 6rem 0 0 2.5rem;
+    margin: 5rem 0 0 2.5rem;
   }
 }
 

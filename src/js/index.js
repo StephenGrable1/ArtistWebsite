@@ -17,9 +17,10 @@ $(document).ready(function () {
           })
       },
       scrollToSection: function(href) {
-        this.$el.animate({
-          scrollTop: $(href).offset().top
-        }, 800);
+        $(href).velocity('scroll', {
+          duration: 900,
+          easing: 'ease-in-out-sine'
+        });
       },
       scrollOnLoad: function() {
         if (location.hash) {

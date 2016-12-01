@@ -1,7 +1,8 @@
 html, body {
   margin-right: 0px;
   margin-left: 0px;
-  margin-bottom: -8px; }
+  margin-bottom: -8px;
+  font-family: 'Open Sans', sans-serif; }
 
 .header-container {
   margin-top: -8px;
@@ -26,11 +27,15 @@ h1 {
   float: left; }
 
 ul {
+  text-decoration: none;
   margin: 1.8rem 2rem 0 0;
   list-style-type: none;
   float: right; }
+  ul a {
+    text-decoration: none; }
 
 li {
+  font-size: 15px;
   color: white;
   display: inline;
   margin: 0 2rem 0 0; }
@@ -64,11 +69,45 @@ img {
     overflow-x: hidden;
     transition: 1s; }
   .show {
-    width: 250px; }
+    width: 100%; }
+  .close-nav-container {
+    padding: 8px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    text-align: center;
+    clear: both; }
+  .close-nav .line {
+    z-index: 1;
+    width: 30px;
+    height: 4px;
+    display: block;
+    overflow-x: hidden;
+    margin: 8px auto;
+    background-color: white; }
+  .close-nav .line:first-child {
+    transform-origin: 0px 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg); }
+  .close-nav .line:nth-child(2) {
+    transform-origin: 13px 5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg); }
+  .close-nav-container:hover {
+    cursor: pointer; }
   .nav-container {
     width: 50%;
     margin: auto; }
+    .nav-container ul {
+      width: 200px;
+      padding-top: 3rem;
+      margin: auto; }
     .nav-container li {
+      text-align: center;
       margin-top: 2rem;
       display: block; } }
 
@@ -92,6 +131,7 @@ img {
 
 .bio-text {
   width: 40%;
+  font-size: 15px;
   float: left; }
 
 .bio-img-container {
@@ -104,7 +144,7 @@ img {
 
 @media screen and (max-width: 320px) {
   .bio-section {
-    height: 570px; }
+    height: 610px; }
   .bio-text {
     width: 250px; }
   .bio-img-container {
@@ -117,7 +157,7 @@ img {
 
 @media screen and (max-width: 460px) and (min-width: 321px) {
   .bio-section {
-    height: 585px; }
+    height: 635px; }
   .bio-text {
     width: 100%; }
   .bio-img-container {
@@ -130,7 +170,7 @@ img {
 
 @media screen and (max-width: 560px) and (min-width: 461px) {
   .bio-section {
-    height: 600px; }
+    height: 625px; }
   .bio-text {
     width: 100%; }
   .bio-img-container {
@@ -142,20 +182,6 @@ img {
       margin: auto; } }
 
 @media screen and (max-width: 620px) and (min-width: 561px) {
-  .bio-section {
-    height: 620px; }
-  .bio-text {
-    padding-bottom: 1rem;
-    width: 100%; }
-  .bio-img-container {
-    width: 60%;
-    float: none;
-    margin: auto; }
-    .bio-img-container img {
-      width: 100%;
-      margin: auto; } }
-
-@media screen and (min-width: 621px) and (max-width: 680px) {
   .bio-section {
     height: 640px; }
   .bio-text {
@@ -169,11 +195,25 @@ img {
       width: 100%;
       margin: auto; } }
 
+@media screen and (min-width: 621px) and (max-width: 680px) {
+  .bio-section {
+    height: 660px; }
+  .bio-text {
+    padding-bottom: 1rem;
+    width: 100%; }
+  .bio-img-container {
+    width: 60%;
+    float: none;
+    margin: auto; }
+    .bio-img-container img {
+      width: 100%;
+      margin: auto; } }
+
 @media screen and (min-width: 681px) and (max-width: 800px) {
   .bio-section {
-    height: 475px; }
+    height: 500px; }
   .bio-text {
-    margin: 2rem 0 0 0; }
+    margin: 0 0 0 0; }
   .bio-img-container {
     margin-top: .2rem;
     width: 50%; }
@@ -189,7 +229,11 @@ img {
     .bio-img-container img {
       width: 275px; }
   .bio-text {
-    margin: 4rem 0 0 .5rem; } }
+    margin: 1rem 0 0 .5rem; } }
+
+@media screen and (min-width: 900px) {
+  .bio-text {
+    margin: 2.5rem 0 0 .5rem; } }
 
 @media screen and (min-width: 1200px) {
   .bio-section {
@@ -198,7 +242,7 @@ img {
   .bio-img-container {
     margin-right: 2.5rem; }
   .bio-text {
-    margin: 6rem 0 0 2.5rem; } }
+    margin: 5rem 0 0 2.5rem; } }
 
 .bio-text-extended {
   display: none; }

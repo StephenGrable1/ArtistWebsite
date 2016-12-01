@@ -26,16 +26,24 @@ h1{
 }
 
 // Display when not in mobile
+
+
 ul {
+  text-decoration: none;
   margin: 1.8rem 2rem 0 0;
   list-style-type: none;
   float:right;
+    a {
+      text-decoration: none;
+    }
 }
 
 li{
+  font-size: 15px;
   color:white;
   display: inline;
   margin: 0 2rem 0 0;
+
 }
 
 img{
