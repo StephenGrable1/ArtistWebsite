@@ -87,12 +87,18 @@ img {
     background-color: white; }
   .close-nav .line:first-child {
     transform-origin: 0px 5px;
+    -webkit-transform-origin: 0px 5px;
+    -o-transform-origin: 0px 5px;
+    -moz-transform-origin: 0px 5px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -moz-transform: rotate(45deg); }
   .close-nav .line:nth-child(2) {
     transform-origin: 13px 5px;
+    -webkit-transform-origin: 13px 5px;
+    -o-transform-origin: 13px 5px;
+    -moz-transform-origin: 13px 5px;
     transform: rotate(45deg);
     -webkit-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
