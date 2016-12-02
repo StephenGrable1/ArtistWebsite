@@ -51,14 +51,14 @@ $(document).ready(function(){
     },
 
     increaseText: function(id) {
-      $('#'+id).velocity({'font-size': '16px'}, {duration: 250});
+      $('#'+id).velocity({'font-size': '17px'}, {duration: 250});
     },
     shrinkText: function(id) {
-      $('#'+id).velocity({'font-size': '14px'}, {duration: 200});
+      $('#'+id).velocity({'font-size': '15px'}, {duration: 200});
     },
 
     defaultText: function(id) {
-      $('#'+id).velocity({'font-size': '15px'}, {duration: 100});
+      $('#'+id).velocity({'font-size': '16px'}, {duration: 100});
     }
 
   }
