@@ -27,15 +27,15 @@ $(document).ready(function(){
 
       this.$elChappo.mouseover(function() {
         var id = $(this).attr('id');
-        socialHover.increaseText(id);
+        socialHover.hoverText(id);
       });
       this.$elChappo.mouseout(function() {
         var id = $(this).attr('id');
-        socialHover.defaultText(id);
+        socialHover.mouseOutText(id);
       });
       this.$elChappo.mousedown(function() {
         var id = $(this).attr('id');
-        socialHover.shrinkText(id);
+        socialHover.clickText(id);
       });
 
     },
@@ -50,15 +50,17 @@ $(document).ready(function(){
       $('#'+id).velocity({'width': '40px'}, {duration: 75});
     },
 
-    increaseText: function(id) {
-      $('#'+id).velocity({'font-size': '17px'}, {duration: 250});
+    hoverText: function(id) {
+      $('#'+id).css('color', 'white');
+      $('#'+id).velocity({translateY: '-4px'}, {duration: 100});
     },
-    shrinkText: function(id) {
-      $('#'+id).velocity({'font-size': '15px'}, {duration: 200});
+    mouseOutText: function(id) {
+      $('#'+id).css('color', '#f6f6f6');
+      $('#'+id).velocity("reverse");
     },
 
-    defaultText: function(id) {
-      $('#'+id).velocity({'font-size': '16px'}, {duration: 100});
+    clickText: function(id) {
+      $('#'+id).css('color', 'white');
     }
 
   }
