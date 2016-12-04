@@ -6,6 +6,10 @@ html, body{
   font-family: 'Open Sans', sans-serif;
 }
 
+.bio-text{
+  font-size: 15px;
+}
+
 @import "base/variables";
 @import "partials/header";
 @import "partials/mobile-nav";

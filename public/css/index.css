@@ -5,6 +5,9 @@ html, body {
   margin-top: -8px;
   font-family: 'Open Sans', sans-serif; }
 
+.bio-text {
+  font-size: 15px; }
+
 .header-container {
   margin-top: -8px;
   background-image: url("/media/cover_photo.png");
@@ -254,7 +257,7 @@ img {
       width: 260px;
       margin: auto; } }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 801px) {
   .bio-img-container {
     width: 275px;
     float: right;
