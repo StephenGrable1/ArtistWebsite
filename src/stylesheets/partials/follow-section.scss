@@ -1,9 +1,14 @@
 $social-ids: fb, twt, spotify, insta, yt;
 
+#follow{
+  background-image: url('/media/bright_section_bg.png');
+  background-repeat: repeat;
+}
+
 .follow-section{
   background-color: $medium-grey;
   height: 100px;
-  margin-bottom: -1rem;
+  margin-bottom: -2rem;
 }
 
 .social-links{
@@ -27,7 +32,7 @@ $social-ids: fb, twt, spotify, insta, yt;
   }
 
   img{
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 

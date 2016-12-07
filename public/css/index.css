@@ -23,13 +23,13 @@ header {
   opacity: 1; }
 
 h1 {
-  font-size: 56px;
+  font-size: 68px;
   text-align: center; }
 
 .nav {
   margin-top: 16px;
   width: 100%;
-  height: 40px;
+  height: 50px;
   background-color: black;
   opacity: .7; }
   .nav .nav-container {
@@ -37,7 +37,7 @@ h1 {
     width: 100%; }
 
 ul {
-  width: 300px;
+  width: 375px;
   padding-top: .5rem;
   text-decoration: none;
   margin: auto;
@@ -46,7 +46,7 @@ ul {
     text-decoration: none; }
 
 li {
-  font-size: 16px;
+  font-size: 24px;
   color: #e0e0e0;
   display: inline-block;
   margin: 0 2rem 0 0;
@@ -67,7 +67,7 @@ img {
     width: 100%;
     margin: auto; }
   ul {
-    width: 420px;
+    width: 502px;
     margin: auto; } }
 
 @media screen and (max-width: 600px) {
@@ -147,6 +147,10 @@ img {
       margin-top: 2rem;
       display: block; } }
 
+#listen {
+  background-image: url("/media/dark_section_bg.png");
+  background-repeat: repeat; }
+
 .listen-container {
   margin: auto;
   padding: 2rem 0 2rem 0;
@@ -157,8 +161,8 @@ img {
     width: 80%; } }
 
 .bio-section {
-  background-color: #bdbdbd;
-  height: 485px; }
+  background-image: url("/media/bright_section_bg.png");
+  background-repeat: repeat; }
 
 .bio-container {
   margin: auto;
@@ -258,9 +262,10 @@ img {
       margin: auto; } }
 
 @media screen and (min-width: 801px) {
+  .bio-section {
+    height: 500px; }
   .bio-img-container {
     width: 275px;
-    float: right;
     margin-right: .5rem; }
     .bio-img-container img {
       width: 275px; }
@@ -290,6 +295,10 @@ img {
 
 .read-more:hover {
   cursor: pointer; }
+
+#watch {
+  background-image: url("/media/dark_section_bg.png");
+  background-repeat: repeat; }
 
 .watch-container {
   margin: auto;
@@ -324,10 +333,14 @@ img {
     .watch-container .media .youtube {
       height: 450px; } }
 
+#follow {
+  background-image: url("/media/bright_section_bg.png");
+  background-repeat: repeat; }
+
 .follow-section {
   background-color: #bdbdbd;
   height: 100px;
-  margin-bottom: -1rem; }
+  margin-bottom: -2rem; }
 
 .social-links {
   width: 320px;
@@ -345,7 +358,7 @@ img {
     opacity: 0;
     float: left; }
   .social-links-container img {
-    margin-top: 30px; }
+    margin-top: 20px; }
 
 .fb {
   width: 40px; }
@@ -364,8 +377,8 @@ img {
 
 footer {
   background-color: black;
-  height: 75px;
+  height: 35px;
   text-align: center;
   color: white; }
   footer p {
-    padding-top: 25px; }
+    padding-top: 5px; }

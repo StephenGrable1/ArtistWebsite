@@ -1,6 +1,6 @@
 .bio-section{
-  background-color: $medium-grey;
-  height: 485px;
+  background-image: url('/media/bright_section_bg.png');
+  background-repeat: repeat;
 }
 
 .bio-container{
@@ -144,9 +144,11 @@
 }
 
 @media screen and (min-width:801px) {
+  .bio-section{
+    height: 500px;
+  }
   .bio-img-container{
     width:275px;
-    float:right;
     margin-right: .5rem;
     img{
       width:275px;

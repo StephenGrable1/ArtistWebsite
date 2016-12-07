@@ -39,6 +39,7 @@ $(document).ready(function(){
       });
 
     },
+    //
     //Make these modular as well DRY
     increaseSize: function(id) {
       $('#'+id).velocity({'width': '45px'}, {duration:100});
