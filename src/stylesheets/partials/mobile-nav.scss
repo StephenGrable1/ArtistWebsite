@@ -1,33 +1,36 @@
-
-@media screen and (max-width: 600px){
+// Display when less than 600 px
+@media screen and (max-width: 600px) {
   h1{
     font-size: 42px;
     float:right;
-    margin: 3.7rem .7rem 0 0;
+    margin: 3.3rem 1rem 0 0;
   }
-  .hamburger-container{
+  .hamburger-container {
+    background-color: $medium-grey;
+    border-radius: 20%;
     position: fixed;
     top:0px;
-    margin: .2rem 1rem 0 0;
-    padding: 8px;
+    margin: .3rem 1rem 0 1rem;
+    padding: 5px 5px 2px 5px;
     width: 50px;
     height: 50px;
-    float: right;
     text-align: center;
   }
 
-  .hamburger .line{
+  .hamburger .line {
     width: 40px;
     height: 4px;
     background-color: black;
     display: block;
     margin: 8px auto;
+    opacity: 1;
   }
 
-  .hamburger-container:hover{
+  .hamburger-container:hover {
     cursor: pointer;
+    background-color: white;
+    transition: 1s;
   }
-
 
   .nav {
     height:100%;
@@ -43,7 +46,7 @@
     width:100%;
   }
 
-  .close-nav-container{
+  .close-nav-container {
     padding: 8px;
     width: 50px;
     height: 50px;
@@ -52,7 +55,7 @@
     clear: both;
   }
 
-  .close-nav .line{
+  .close-nav .line {
     z-index: 1;
     width: 30px;
     height: 4px;
@@ -62,7 +65,7 @@
     background-color: white;
   }
 
-  .close-nav .line:first-child{
+  .close-nav .line:first-child {
     transform-origin: 0px 5px;
     -webkit-transform-origin: 0px 5px;
     -o-transform-origin: 0px 5px;
@@ -72,10 +75,9 @@
     -webkit-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
-
   }
 
-  .close-nav .line:nth-child(2){
+  .close-nav .line:nth-child(2) {
     transform-origin: 13px 5px;
     -webkit-transform-origin: 13px 5px;
     -o-transform-origin: 13px 5px;
@@ -87,11 +89,11 @@
     -moz-transform: rotate(-45deg);
   }
 
-  .close-nav-container:hover{
+  .close-nav-container:hover {
     cursor: pointer;
   }
 
-  .nav-container{
+  .nav-container {
     width:50%;
     margin: auto;
 
@@ -107,7 +109,6 @@
       text-align: center;
       margin-top: 2rem;
       display: block;
-
     }
   }
 }

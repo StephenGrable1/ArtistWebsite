@@ -11,7 +11,9 @@ $(document).ready(function(){
       this.$img = this.$el.find('img');
     },
     bindEvents: function() {
-      //Figure out how to make this moduler and dont repeat mouseover DRY
+      //DRY!
+      //SOCIAL LINKS ANIMATION
+      //################################################
       this.$img.mouseover(function() {
         var id = $(this).attr('id');
         socialHover.increaseSize(id);
@@ -24,7 +26,8 @@ $(document).ready(function(){
         var id = $(this).attr('id');
         socialHover.shrinkSize(id);
       });
-
+      //NAV TEXT ANIMATION
+      //#################################################
       this.$elChappo.mouseover(function() {
         var id = $(this).attr('id');
         socialHover.hoverText(id);
@@ -37,10 +40,12 @@ $(document).ready(function(){
         var id = $(this).attr('id');
         socialHover.clickText(id);
       });
-
     },
     //
-    //Make these modular as well DRY
+    //DRY!
+    //
+    //SOCIAL LINKS
+    //################################################
     increaseSize: function(id) {
       $('#'+id).velocity({'width': '45px'}, {duration:100});
     },
@@ -50,7 +55,8 @@ $(document).ready(function(){
     shrinkSize: function(id) {
       $('#'+id).velocity({'width': '40px'}, {duration: 75});
     },
-
+    //NAV TEXT
+    //#################################################
     hoverText: function(id) {
       $('#'+id).css('color', 'white');
       $('#'+id).velocity({translateY: '-4px'}, {duration: 100});
@@ -59,11 +65,9 @@ $(document).ready(function(){
       $('#'+id).css('color', '#f6f6f6');
       $('#'+id).velocity("reverse");
     },
-
     clickText: function(id) {
       $('#'+id).css('color', 'white');
     }
-
   }
   socialHover.init();
 

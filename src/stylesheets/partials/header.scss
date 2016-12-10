@@ -1,6 +1,5 @@
 // Display when not in mobile
-
-.nav{
+.nav {
   position: fixed;
   top:0px;
   width: 100%;
@@ -25,7 +24,7 @@ ul {
     }
 }
 
-li{
+li {
   font-size: 24px;
   color: $nav-text-color;
   display: inline-block;
@@ -35,13 +34,12 @@ li{
   -moz-transition: color .1s linear;
 }
 
-
-img{
+img {
   width: 100%;
   margin-top: 0;
 }
 
-@media screen and (min-width: 865px){
+@media screen and (min-width: 865px) {
   .header-container {
     height:805px;
   }
@@ -54,7 +52,7 @@ img{
     margin: auto;
   }
 
-  ul{
+  ul {
     width:502px; //hehe
     margin: auto;
   }

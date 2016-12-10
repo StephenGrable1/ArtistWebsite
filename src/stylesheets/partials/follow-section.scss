@@ -1,37 +1,37 @@
 $social-ids: fb, twt, spotify, insta, yt;
 
-#follow{
+#follow {
   background-image: url('/media/bright_section_bg.png');
   background-repeat: repeat;
 }
 
-.follow-section{
+.follow-section {
   background-color: $medium-grey;
   height: 100px;
   margin-bottom: -2rem;
 }
 
-.social-links{
+.social-links {
   width:320px;
   height:90px;
   padding-left: 1.5rem;
   margin: auto;
 }
 
-.social-links-container{
+.social-links-container {
   width:90%;
   background-color: blue;
   margin: auto;
 
 
-  .img-container{
+  .img-container {
     width:40px;
     margin: 0 1rem 0 0;
     opacity: 0;
     float: left;
   }
 
-  img{
+  img {
     margin-top: 20px;
   }
 }
