@@ -1,32 +1,12 @@
-.header-container {
-  margin-top: -8px;
-  background-image:url('/media/cover_photo.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width:100%;
-  height:650px;
-  background-color: #d3d3d3;
-}
-
-header {
-  margin-top: 0px;
-  opacity: 1;
-}
-
-h1{
-  font-size: 68px;
-  text-align: center;
-}
-
 // Display when not in mobile
 
 .nav{
-  margin-top: 16px;
+  position: fixed;
+  top:0px;
   width: 100%;
   height:50px;
   background-color: black;
-  opacity: .7;
+  opacity: .85;
 
   .nav-container{
     margin: auto;
