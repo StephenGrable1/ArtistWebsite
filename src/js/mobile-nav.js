@@ -19,8 +19,6 @@ $(document).ready(function(){
     toggleMobileNav: function() {
       this.$nav.toggleClass('show');
     },
-
   }
-  handleNav.init();
-
+handleNav.init();
 });

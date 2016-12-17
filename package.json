@@ -1,7 +1,7 @@
 {
   "name": "artist_website",
   "version": "1.0.0",
-  "description": "This is a simple artist website using node.js",
+  "description": "This is a mobile responsive artist website",
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass src/stylesheets/index.scss -o public/css/",

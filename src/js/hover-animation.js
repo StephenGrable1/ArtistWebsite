@@ -11,7 +11,6 @@ $(document).ready(function(){
       this.$img = this.$el.find('img');
     },
     bindEvents: function() {
-      //DRY!
       //SOCIAL LINKS ANIMATION
       //################################################
       this.$img.mouseover(function() {
@@ -41,9 +40,6 @@ $(document).ready(function(){
         socialHover.clickText(id);
       });
     },
-    //
-    //DRY!
-    //
     //SOCIAL LINKS
     //################################################
     increaseSize: function(id) {
