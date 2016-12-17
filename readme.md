@@ -1,7 +1,7 @@
 A mobile responsive artist website.
 
 Technologies used:
-Jade (now referred to as Pug) for HTML templating, Sass for advanced CSS, Javascript including Node (Express) for backend server support/custom build scripts and Velocity.js for dynamic animations.
+Jade (now referred to as Pug) for HTML templating, Sass for advanced CSS, Javascript including Node (Express) for backend server support/custom build scripts and Velocity.js for interactive animations.
 
 I really learned a lot during this build. I explored ways to modularize my code and also utilized modern techniques to dramatically improve performance. I used npm scripts to compile and minify javascript/css files and to optimize images for the web. I employed a dynamic loading system for video that loads only when the user wants to view the content. These techniques dramatically minimized the initial loading time and without a doubt will enhance the overall experience of the website.
 
