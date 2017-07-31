@@ -22,7 +22,7 @@
   "dependencies": {
     "express": "^4.14.0",
     "morgan": "^1.7.0",
-    "node-sass": "^3.12.5",
+    "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
     "pug": "^2.0.0-beta6"
   },

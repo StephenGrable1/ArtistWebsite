@@ -9,11 +9,18 @@ $(document).ready(function () {
     casheDom: function() {
       this.$el = $('html, body');
       this.$li = this.$el.find('li');
+      this.$call_to_action = this.$el.find('.call-to-action-container');
+      console.log(this.$call_to_action);
     },
     scrollOnClick: function() {
       this.$li.click(function() {
         var href = $(this).parent().attr('href');
+        console.log('href', href);
         handleScroll.scrollToSection(href);
+      })
+
+      this.$call_to_action.click(function() {
+        handleScroll.scrollToSection('#listen');
       })
     },
     scrollToSection: function(href) {
