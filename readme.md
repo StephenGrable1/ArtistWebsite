@@ -8,4 +8,4 @@ I really learned a lot during this build. I explored ways to modularize my code 
 I enjoyed using Jade(Pug) and Sass for this build. These tools made it very easy to split up my code into sections that reflected the content of the site. If I or someone else happens to revisit this code, I have no doubt that it will be easy to understand and contribute to.
 
 
-Feel free to explore the live build here -> https://warm-ocean-68542.herokuapp.com/
+Feel free to explore the live build 
